@@ -15,14 +15,15 @@ public class BinarySearch {
 
         while(start <= end){
 
-            int mid = start + (end - start) / 2;
-            if(target < arr[mid]){
+            int mid = start + (end - start) / 2;// not done (start + end) / 2 cuz (start + end) may get very large
+
+            if(target < arr[mid]){   // search at left side of array and update end by mid - 1
                 end = mid - 1;
             }
-            else if (target > arr[mid]){
+            else if (target > arr[mid]){ // search at right side of array and update start by mid + 1
                 start = mid + 1;
             }
-            else{
+            else{  // only here answer is returened
                 return mid;
             }
 

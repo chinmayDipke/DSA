@@ -9,7 +9,8 @@ public class InfiniteArrays {
     static int areyfind(int[] arr, int target) {
         int start = 0;
         int end = 1;
-
+        // here we dont know the size of the array so we find the elements in the chunks that why we first determine array
+        // means we have start but we dont have the end we need to find a range where element will lie
         while (target > arr[end]) {
 
             int newstart = end + 1 ;
