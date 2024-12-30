@@ -36,7 +36,7 @@ Java SQL HTML CSS JavaScript
 
 📚 Featured Projects
 
-🚴 Bike Rental Management System
+ Estate Listing Site
 
 A modular system for managing bike rentals with a user-friendly interface and efficient database management.
 
