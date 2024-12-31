@@ -54,8 +54,7 @@ A functional music streaming app with a sleek UI, developed to replicate key fea
 ---
 
 ## 🏆 Highlights  
-- Java Co-Leaf  **Coding Club PRPCEM**
-- 
+- Java Co-Lead  **Coding Club PRPCEM**
 - **NPTEL Elite Certifications**: Programming in Java
 
 
