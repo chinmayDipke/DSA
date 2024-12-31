@@ -10,7 +10,7 @@ public class CyclicSort {
         cyclicSort(arr);
         System.out.println(Arrays.toString(arr));
     }
-
+//cyclic sort is applied to the array when search is dome from 0,1 to n
     static void cyclicSort(int[] arr) {
        int i = 0;
         while(i < arr.length){
