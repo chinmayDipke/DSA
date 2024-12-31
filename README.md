@@ -42,7 +42,7 @@ Hello! I'm a **Java Developer**, **Web Developer**, and an avid learner passiona
 ---
 
 ## 📚 Featured Projects  
-### 🏠 ** Real Estate Site**  
+### 🏠 **Real Estate Site**  
 A comprehensive platform designed for real estate listing and management with an intuitive interface and seamless user experience.
 
 ### 📱 **BMI Calculator in Java (Android Project)**  
