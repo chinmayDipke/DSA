@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Fibonacci {
     public static void main(String[] args) {
-        int x = 4;
+        int x = 7;
         int[] arr=null;
         // int[] arr;
        System.out.println((fibo(x)));
@@ -19,12 +19,12 @@ public class Fibonacci {
             n1 = n2;*/
         }
         static int fibo(int n){
+            if(n == 1)
+                return n;
             if(n == 0)
                 return n;
-            else if(n==1)
-                return n;
 
-        return fibo(n-1) + fibo(n-1);
+        return fibo(n-1) + fibo(n-2);
         }
     }
 
