@@ -1,6 +1,7 @@
 package Questions;
 
-public class LeetCode326 {
+public class LeetCode231 {
+
     public static void main(String[] args) {
 
         int n = 3;
@@ -12,7 +13,7 @@ public class LeetCode326 {
 
         for(int i = 0; i<=n; i++){
 
-            double ans = Math.pow(2,i);
+            double ans = Math.pow(3,i);
             if(ans==n)
                 return true;
         }
