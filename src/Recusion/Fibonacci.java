@@ -19,7 +19,7 @@ public class Fibonacci {
             n1 = n2;*/
         }
         static int fibo(int n){
-            if(n == 1)
+            if(n == 1)               // this are base condition which are compulsory to stop the loop
                 return n;
             if(n == 0)
                 return n;
