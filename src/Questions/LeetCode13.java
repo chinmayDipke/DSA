@@ -13,6 +13,7 @@ public class LeetCode13 {
         int num = 0;
 
         for (int i = 0; i < s.length(); i++) {
+
             if (s.charAt(i) == 'I') {
                 if (i < s.length() - 1 && (s.charAt(i + 1) == 'V' || s.charAt(i + 1) == 'X')) {
                     num -= 1;
