@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ArbitaryArray {
     public static void main(String[] args) {
-        int[][] arr={
+        int[][] arr={                                // 2-D array
                 {10, 20, 30, 40, 50},
                 {11, 21, 31, 41},
                 {22}
