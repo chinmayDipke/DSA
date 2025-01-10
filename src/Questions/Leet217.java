@@ -11,7 +11,7 @@ public class Leet217 {
     }
 
     static boolean containsDuplicate(int[] arr) {
-        Arrays.sort(arr);
+        Arrays.sort(arr);//sort the arrray
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] == arr[i - 1]) {
                 return true;
