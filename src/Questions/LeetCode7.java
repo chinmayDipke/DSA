@@ -14,7 +14,7 @@ public class LeetCode7 {
 
         while (x != 0)
         {
-            double tail = x % 10;
+            double tail = x % 10;  //values are large after the sum
             double newResult = result * 10 + tail;
             if(newResult > Integer.MAX_VALUE || newResult < Integer.MIN_VALUE)
                 return 0;

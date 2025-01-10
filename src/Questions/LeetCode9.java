@@ -14,7 +14,7 @@ public class LeetCode9 {
         s.trim();
         int end = s.length() - 1 ;
         int start = 0;
-//
+
         while(start <= end){
             if(s.charAt(start) != s.charAt(end)){
                 return false;

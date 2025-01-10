@@ -1,6 +1,6 @@
 package Questions;
 
-import java.sql.SQLOutput;
+
 
 //https://leetcode.com/problems/sqrtx/
 public class LeetCode69 {
