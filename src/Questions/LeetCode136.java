@@ -9,6 +9,7 @@ public class LeetCode136 {
         int[] arr = {4,1,2,1,2};
         int[] arr1 = {2,2,1};
         System.out.println(singleNumber1(arr1));
+        System.out.println(singleNumber(arr));
 
 
     }
