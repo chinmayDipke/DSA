@@ -23,7 +23,7 @@ public class LeetCode136 {
         }
         return count;
     }
-   /* static int singleNumber1(int[] nums) {
+    static int singleNumber1(int[] nums) {
         Arrays.sort(nums);
         for (int i = 0; i < nums.length - 1; i += 2) {
             if (nums[i] != nums[i + 1]) {
@@ -31,5 +31,5 @@ public class LeetCode136 {
             }
         }
         return nums[nums.length - 1];
-    }*/
+    }
 }
