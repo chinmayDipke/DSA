@@ -38,4 +38,22 @@ public class LeetCode704 {
         }
         return -1;
     }
-}
+
+
+        static int binarySearch1(int[] nums, int target, int left, int right) {
+            if (left > right) {
+                return -1; // Base case: target not found
+            }
+
+            int mid = left + (right - left) / 2;
+
+            if (nums[mid] == target) {
+                return mid; // Base case: target found
+            } else if (nums[mid] < target) {
+                return binarySearch(nums, target, mid + 1, right); // Search in the right half
+            } else {
+                return binarySearch(nums, target, left, mid - 1); // Search in the left half
+            }
+        }
+    }
+
