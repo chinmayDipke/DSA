@@ -50,9 +50,9 @@ public class LeetCode704 {
             if (nums[mid] == target) {
                 return mid; // Base case: target found
             } else if (nums[mid] < target) {
-                return binarySearch(nums, target, mid + 1, right); // Search in the right half
+                return binarySearch1(nums, target, mid + 1, right); // Search in the right half
             } else {
-                return binarySearch(nums, target, left, mid - 1); // Search in the left half
+                return binarySearch1(nums, target, left, mid - 1); // Search in the left half
             }
         }
     }
