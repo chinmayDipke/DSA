@@ -1,5 +1,7 @@
 package Questions;
 
+import java.util.Arrays;
+
 public class LeetCode137 {
     public static void main(String[] args) {
         int[] arr = {2,2,3,2};
