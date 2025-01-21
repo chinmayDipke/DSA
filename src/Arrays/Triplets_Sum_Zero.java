@@ -8,6 +8,7 @@ public class Triplets_Sum_Zero {
         System.out.println(Arrays.toString(new int[][]{triplet(x)}));
     }
     static int[] triplet(int[] x){
+        Arrays.sort(x);
         int n = x.length;
         int[] res = {};
         for(int i = 0; i < n - 2;i++){
@@ -17,7 +18,7 @@ public class Triplets_Sum_Zero {
                         for(int y=0;y<k;y++){
                             res++ = x[i];
                             res++ = x[j];
-                            res++ = x[k];
+                            res = x[k];
                         }
                     }
                 }
