@@ -7,7 +7,7 @@ public class Triplets_Sum_Zero {
         int[] x = {0, -2, 5, -3, 2};//0, -2, 2
         System.out.println(Arrays.toString(new int[][]{triplet(x)}));
     }
-    static int[] triplet(int[] x){
+    /*static int[] triplet(int[] x){
         Arrays.sort(x);
         int n = x.length;
         int[] res = {};
@@ -22,7 +22,7 @@ public class Triplets_Sum_Zero {
                         }
                     }
                 }
-            }
+            }*/
 
         }
 
