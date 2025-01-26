@@ -2,12 +2,8 @@ package Questions;
 
 public class LeetCode7 {
     public static void main(String[] args) {
-
-
         System.out.println(reverse(120));
     }
-
-
     static int reverse(int x) {
         double result = 0;
         while (x != 0)
