@@ -9,13 +9,11 @@ public class LeetCode7 {
 
 
     static int reverse(int x) {
-
         double result = 0;
-
         while (x != 0)
         {
-            double tail = x % 10;  //values are large after the sum
-            double newResult = result * 10 + tail;
+            double end = x % 10;  //values are large after the sum
+            double newResult = result * 10 + end;
             if(newResult > Integer.MAX_VALUE || newResult < Integer.MIN_VALUE)
                 return 0;
             result = newResult;
