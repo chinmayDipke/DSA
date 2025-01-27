@@ -2,13 +2,14 @@ package Recusion;
 
 public class ReverseNumber {
     public static void main(String[] args) {
-        System.out.println(reverse(12));
+        System.out.println(reverse(121345));
     }
-
+    static int result = 0;
     static int reverse(int num) {
         if (num < 10) {
-            return num;
+            return result * 10 + num;
         }
-        return (num % 10) * 10 + reverse(num / 10);
+        result = result * 10 + num % 10;
+        return reverse(num / 10);
     }
 }
