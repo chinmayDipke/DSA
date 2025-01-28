@@ -13,8 +13,6 @@ public class Palindrome {
         if(n==num){
             return true;
         }
-
-
         return false;
     }
     public static int result = 0;
