@@ -14,6 +14,5 @@ public class LeetCode1832 {
             }
         }
         return true;
-
     }
 }
