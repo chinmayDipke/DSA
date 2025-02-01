@@ -1,10 +1,9 @@
 package Recusion;
-
 public class CountZero {
     public static void main(String[] args) {
         System.out.println(countZero(3000204));
     }
-
+    
     static int countZero(int num){
 
         if (num < 10) {
