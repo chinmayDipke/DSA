@@ -23,21 +23,4 @@ public class SecondLargestElement {
         }
         return secondlargest;
     }
-
-    static int secondSmallestElement(int[] nums){
-        int smallestElement = 99;
-
-        for(int i = 0; i < nums.length; i++ ){
-            if(nums[i] < smallestElement ){
-                smallestElement = nums[i];
-            }
-        }
-        int secondlargest = 99;
-        for(int i = 0; i < nums.length; i++ ){
-            if(nums[i] < secondlargest && nums[i] != smallestElement){
-                secondlargest = nums[i];
-            }
-        }
-        return secondlargest;
-    }
 }
