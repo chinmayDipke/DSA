@@ -5,7 +5,7 @@ public class SecondLargestElement {
         int[] arr = {2,5,3,12,5,9};
 
         System.out.println(secondLargestElement(arr));
-        System.out.println(secondSmallestElement(arr));
+
     }
     static int secondLargestElement(int[] nums){
         int largestElement = -1;
