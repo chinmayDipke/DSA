@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Leet217 {
     public static void main(String[] args) {
         int[] arr = { 5, 6, 1, 3, 0 };
-
+        
 
         System.out.println(containsDuplicate(arr));
     }
