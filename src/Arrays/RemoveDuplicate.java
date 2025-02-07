@@ -20,7 +20,5 @@ public class RemoveDuplicate {
         }
         return list;
     }
-    static int[] removeDuplicate(int[] nums){
 
-    }
 }
