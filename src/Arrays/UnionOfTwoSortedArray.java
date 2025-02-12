@@ -4,9 +4,10 @@ import java.util.ArrayList;
 
 public class UnionOfTwoSortedArray {
     public static void main(String[] args) {
-        int[] nums1 = {1, 2, 3, 4};
-        int[] nums2 = {1, 2, 3, 5, 8};
+        int[] nums1 = {1, 2, 5};
+        int[] nums2 = {1, 2, 3, 4, 5};
         System.out.println(union(nums1, nums2));
+        System.out.println(intersection(nums1, nums2));
     }
     public static ArrayList<Integer> union(int[] nums1, int[] nums2) {
         ArrayList<Integer> list = new ArrayList<>();
@@ -47,6 +48,27 @@ public class UnionOfTwoSortedArray {
             j++;
         }
 
+        return list;
+    }
+
+
+    public static ArrayList<Integer> intersection(int[] a, int[] b) {
+        ArrayList<Integer> list = new ArrayList<>();
+        int lastAdded = Integer.MIN_VALUE; // To avoid duplicates
+
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < b.length; j++) {
+                if (a[i] == b[j]) {
+
+                    list.add(a[i]);
+
+                    break;
+                }
+                if (b[j] > a[i]) {
+                    break;
+                }
+            }
+        }
         return list;
     }
 }
