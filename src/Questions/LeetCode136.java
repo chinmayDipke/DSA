@@ -10,16 +10,11 @@ public class LeetCode136 {
         int[] arr1 = {2,2,1};
         System.out.println(singleNumber1(arr1));
         System.out.println(singleNumber(arr));
-
-
     }
-
     static int singleNumber(int[] nums) {
-
         int count = 0;
         Arrays.sort(nums);
         for(int i = 0;i<nums.length;i++){
-
             count = count ^ nums[i];
         }
         return count;
