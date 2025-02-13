@@ -54,7 +54,6 @@ public class UnionOfTwoSortedArray {
 
     public static ArrayList<Integer> intersection(int[] a, int[] b) {
         ArrayList<Integer> list = new ArrayList<>();
-        int lastAdded = Integer.MIN_VALUE; // To avoid duplicates
 
         for (int i = 0; i < a.length; i++) {
             for (int j = 0; j < b.length; j++) {
