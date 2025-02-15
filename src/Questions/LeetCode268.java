@@ -1,9 +1,13 @@
 package Questions;
+
+import java.util.Arrays;
+
 public class LeetCode268 {
     public static void main(String[] args) {
         int[] arr = {3, 0, 1};
         int missing = missingNumber(arr);
-        System.out.println("Missing number: " + missing);
+        int missing1 = missingNumber1(arr);
+        System.out.println(missing);
     }
     static int missingNumber(int[] arr) {
         int n = arr.length;
@@ -13,5 +17,17 @@ public class LeetCode268 {
             actualSum += num;
         }
         return expectedSum - actualSum;
+    }
+    public static int missingNumber1(int[] arr) {
+        Arrays.sort(arr);
+        int i = 0;
+
+        int index = arr[i] - 1;
+        for(i = 1; i<arr.length;i++){
+            if(arr[i] != arr[index]){
+                return index;
+            }
+        }
+        return -1;
     }
 }
