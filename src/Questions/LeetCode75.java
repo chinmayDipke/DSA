@@ -5,7 +5,7 @@ public class LeetCode75 {
         int[] arr = {0 , 2, 1, 0, 1};
         System.out.println(sortColors(arr));
     }
-    public static void sortColors(int[] nums) {
+    public static int[] sortColors(int[] nums) {
         int cnt0 = 0, cnt1 = 0, cnt2 = 0;
 
         for(int i = 0; i < nums.length; i++){
@@ -25,5 +25,6 @@ public class LeetCode75 {
         for(int i = cnt0 + cnt1; i < nums.length; i++){
             nums[i] = 2;
         }
+        return nums;
     }
 }
