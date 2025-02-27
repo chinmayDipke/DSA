@@ -12,10 +12,8 @@ public class LeetCode128 {
         if (nums.length == 0) return 0;
 
         Arrays.sort(nums);
-
         int longest = 1, cnt = 1;
         int lastNumber = nums[0];
-
         for (int i = 1; i < nums.length; i++) {
             if (nums[i] - 1 == lastNumber) {
                 cnt += 1;
@@ -26,7 +24,6 @@ public class LeetCode128 {
             }
             longest = Math.max(longest, cnt);
         }
-
         return longest;
     }
 }
