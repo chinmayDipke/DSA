@@ -10,7 +10,6 @@ public class LeetCode128 {
 
     public static int longestConsecutive(int[] nums) {
         if (nums.length == 0) return 0;
-
         Arrays.sort(nums);
         int longest = 1, cnt = 1;
         int lastNumber = nums[0];
