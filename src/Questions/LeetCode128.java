@@ -1,5 +1,4 @@
 package Questions;
-
 import java.util.Arrays;
 public class LeetCode128 {
     public static void main(String[] args) {
