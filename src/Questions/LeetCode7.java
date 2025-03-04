@@ -15,7 +15,6 @@ public class LeetCode7 {
             result = newResult;
             x = x / 10;
         }
-
         return (int)result;
     }
 }
