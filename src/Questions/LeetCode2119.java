@@ -5,7 +5,7 @@ public class LeetCode2119 {
         System.out.println(isSameAfterReversals(526));
     }
 
-    private static boolean isSameAfterReversals(int num) {
+    public static boolean isSameAfterReversals(int num) {
         int x = num % 10;
         if(num==0){
             return true;
