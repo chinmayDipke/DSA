@@ -1,5 +1,6 @@
 package Questions;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.HashSet;
 import java.util.Arrays;
@@ -31,5 +32,25 @@ public class LeetCode1436 {
         }
 
         return ""; // Should never reach here based on problem constraints
+    }
+    public String destCity2(List<List<String>> paths) {
+        HashSet<String> cities = new HashSet<>();
+        HashMap<String, String> mp = new HashMap<>();
+        String dest = "";
+
+        for(List<String> path: paths){
+            cities.add(path.get(0));
+            cities.add(path.get(1));
+            mp.put(path.get(0), path.get(1));
+
+        }
+        for(String city: cities){
+            if(mp.containsKey(city) == false){
+                dest = city;
+                break;
+            }
+
+        }
+        return dest;
     }
 }
