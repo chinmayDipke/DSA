@@ -13,7 +13,7 @@ public class LeetCode1436 {
                 Arrays.asList("Lima", "Sao Paulo")
         );
 
-        System.out.println(destCity(paths)); // Expected output: "Sao Paulo"
+        System.out.println(destCity(paths));
     }
 
     public static String destCity(List<List<String>> paths) {
