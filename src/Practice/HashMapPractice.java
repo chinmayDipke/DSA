@@ -55,7 +55,23 @@ public class HashMapPractice {
               Integer val = e.getValue();
               String key = e.getKey();
               System.out.println(key+" has "+val);
-
           }
+
+          int target = 9;
+          int[] arr= {2,7,11,15};
+          HashMap<Integer,Integer> hs = new HashMap<>();
+
+
+          for(int i = 0; i < arr.length; i++){
+              int partner = target - arr[i];
+
+              if(hs.containsKey(partner)){
+                  System.out.println(hs.get(partner)+":"+ i);
+              }
+
+              hs.put(arr[i],i);
+          }
+
+
     }
 }

@@ -68,5 +68,7 @@ public class ArraysPractice {
         Integer[] arr2 = {5 ,10, 15};
         ArrayList<Integer> list4 = new ArrayList<>(Arrays.asList(arr2));
         System.out.println(list4);
+
+
     }
 }
