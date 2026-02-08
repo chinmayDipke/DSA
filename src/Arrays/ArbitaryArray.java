@@ -1,5 +1,6 @@
 package Arrays;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ArbitaryArray {
@@ -12,6 +13,10 @@ public class ArbitaryArray {
 
         };
         System.out.println(Arrays.toString(search(arr, 22)));
+
+
+        ArrayList<Integer> al = new ArrayList<>();
+
     }
     static int[] search(int [][] matrix, int target){
         int row = 0;
